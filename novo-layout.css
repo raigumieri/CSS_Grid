@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.container-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 250px 250px;
+    grid-template-areas: 
+        "header header" /* Os nomes são iguais, por que quero que pegue a linha inteira */
+        "meio meio2" /* Aqui vai ter duas imagens */
+        "meioa meiob" /* Linha inteira */
+        "footer footer" /* Linha inteira */
+    ;
+}
+
+.img1{
+    grid-area: header;
+}
+
+.img2{
+    grid-area: meio;
+}
+
+.img3{
+    grid-area: meio2;
+}
+
+.img4{
+    grid-area: meioa;
+}
+
+.img5{
+    grid-area: meiob;
+}
+
+

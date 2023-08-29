@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.container-grid{
+    display: grid; /* Transformando em grid */
+    /*grid-template-columns: 100px 100px;*/ /* Declarar quantidades de colunas */
+
+    /*grid-template-columns: repeat(4, 20%);*/ /* Usando o repeat para fazer a mesma coisa */
+
+    /* Utilidade de medida ifracionada */ /* Vai (fracionar) em duas partes iguais*/
+    /* grid-template-columns: repeat(5, 1fr); */
+
+    /* Colocando regra de tamanho min e max */
+    /* Tamanho min de 150 e tamanho max de uma fracao */
+     /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  */
+
+    /* Usando o auto-fit */
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+
+}
